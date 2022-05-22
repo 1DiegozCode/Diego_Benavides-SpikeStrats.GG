@@ -245,6 +245,7 @@
     margin: 0px;
     font-size: 2.1em;
     font-weight: lighter;
+    animation: slide-up 1s;
 }
 
 .flex-center--mapas {
@@ -339,16 +340,6 @@
     font-weight: 100;
 }
 
-.botonAgente {
-    border: 3px solid white;
-    border-radius: 9px 9px;
-    padding: 0.625rem 3.125rem 0.625rem 3.125rem;
-    background-color: #ff4655;
-    letter-spacing: 7px;
-    font-size: 1em;
-    text-decoration: none;
-}
-
 .flexMain--agentes {
     display: flex;
     height: 100%;
@@ -405,6 +396,7 @@
     padding: 2.5rem 3.125rem 4.375rem 3.125rem;
     font-size: 2em;
     font-weight: 100;
+    animation: slide-up 1s;
 }
 
 .imgAdjust--logoIndexAgente {
@@ -454,6 +446,7 @@
     background-size: contain;
     width: 35em;
     height: 20em;
+    transition: background-color .3s;
 }
 
 .flexMain--indexMapas {
@@ -1157,3 +1150,114 @@
 }
 
 /*animaciones*/
+
+header nav ul li a{
+    text-decoration: none;
+    background-image: linear-gradient(#ff4655,#ff4655 );
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+header nav ul li a:hover{
+    background-size: 100% 2px;
+    color: #ff4655;
+}
+
+.botonAgente {
+    border: 3px solid white;
+    border-radius: 9px 9px;
+    padding: 0.625rem 3.125rem 0.625rem 3.125rem;
+    background-color: #ff4655;
+    letter-spacing: 7px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+
+.botonAgente:hover {
+    background: #201c35;
+    border: 3px solid white;
+    color: #ff4655;
+}
+
+    
+@keyframes slide-up {
+    from {
+        opacity: 0.2;
+        line-height: 200px;
+    }
+    to {
+        opacity: 1;
+        line-height: 25px;
+    }
+}
+
+.nombreMapa{
+    text-decoration: none;
+    background-image: linear-gradient(#ff4655,#ff4655 );
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.nombreMapa:hover{
+    background-size: 100% 2px;
+    color: #ff4655;
+}
+
+.a{
+    background-image: url(../assets/spike.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20px;
+    width: 20px;
+}
+
+.spike{
+    height: 2.0rem;
+    width: auto;
+    animation: spike-rotacion .8s ease-in-out;
+}
+
+@keyframes spike-rotacion{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.cajaIndexMapa:hover {
+    background-color: rgba(50, 50, 50, 0);
+    background-blend-mode: soft-light;
+}
+
+.imgAdjust--logoIndexAgente:hover {
+    transform: scale(1.3);
+    background-color: #ff4655;
+    transition: .5s ease-in-out;
+}
+
+.parrafoEstilo--noticias:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+footer aside ul li a{
+    text-decoration: none;
+    background-image: linear-gradient(#ff4655,#ff4655 );
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+footer aside ul li a:hover{
+    background-size: 100% 2px;
+    color: #ff4655;
+}
