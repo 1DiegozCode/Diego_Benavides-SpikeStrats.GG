@@ -1,0 +1,1157 @@
+/*Para todas las paginas*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+/*General*/
+.textoIntroducciones {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+.noStyleList {
+    list-style: none;
+}
+
+.flexSideBySide {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.leftText {
+    display: flex;
+    text-align: center;
+    justify-content: flex-start;
+}
+
+.right {
+    flex-direction: row-reverse;
+}
+
+.margenTitulo--left {
+    margin: 1.25rem 0rem 0rem 5rem;
+}
+
+.margenTitulo--right {
+    margin: 1.25rem 5rem 0rem 0rem;
+}
+
+.margenParrafo--left {
+    margin: 0px 4.375rem 0px 4.375rem;
+}
+
+.margenParrafo--right {
+    margin: 0px 4.375rem 0px 0px;
+}
+
+.flex{
+    display: flex;
+
+
+}
+
+.flexElemento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+
+}
+
+.imagenOscurecida {
+    background-color: rgb(50, 50, 50);
+    background-blend-mode: soft-light;
+}
+
+.centerTitle {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+/*Header todas las paginas*/
+.head {
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: black;
+    border-bottom: 5px solid #ff4655;
+    position: sticky;
+    top: 0px;
+}
+
+.head__logo {
+    margin: 2.1875rem;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.head__nav {
+    margin-left: auto;
+}
+
+
+.head__nav__list {
+    margin: 20px;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.head__nav__list__element {
+    margin: 1.25rem;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+/*Footer todas las paginas*/
+.foot {
+    height: fit-content;
+    display: flex;
+    background-color: #262b28;
+}
+
+.foot__indexRedes {
+    width: 45%;
+    height: 100%;
+}
+
+.foot__indexRedes__head__logo {
+    text-decoration: none;
+    margin: 0.7rem;
+    display: inline-block;
+}
+
+.foot__indexRedes__main__list {
+    display: flex;
+    list-style: none;
+    margin: 0.7rem;
+}
+
+.foot__indexRedes__foot {
+    margin-left: 0.7rem;
+}
+
+.foot__subNav__list {
+    margin: 0.7rem;
+    list-style: none;
+}
+
+.foot__subNav__list__element {
+    text-decoration: none;
+}
+
+
+/*Login*/
+.mainLogin {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201c35;
+    border-bottom: 5px solid #ff4655;
+}
+
+.mainLogin__caja {
+    width: 25%;
+    height: 85%;
+    padding: 40px;
+    background-color: #282343;
+    border: 3px solid #ff4655;
+
+}
+
+.mainLogin__caja__info h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.mainLogin__caja__info__redes {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.mainLogin__caja__formulario {
+    width: 70%;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+
+/*Mapas*/
+.seccionIntroduccion {
+    height: 40vh;
+    width: 100%;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imgFondo {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid #ff4655;
+}
+
+.imgFondo--haven {
+    background-image: url(../assets/haven_logo2.jpg);
+}
+
+.imgFondo--bind {
+    background-image: url(../assets/bind_logo.jpg);
+}
+
+.imgFondo--ascent {
+    background-image: url(../assets/ascent_logo.jpg);
+}
+
+.imgFondo--split {
+    background-image: url(../assets/split_logo.jpg);
+}
+
+.nombreMapa {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px;
+    font-size: 10em;
+    font-weight: 700;
+}
+
+.textoMapa {
+    width: 40%;
+    height: fit-content;
+    margin: 0px;
+    font-size: 2.1em;
+    font-weight: lighter;
+}
+
+.flex-center--mapas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.seccion--mapas {
+    width: 100%;
+    height: 80vh;
+}
+
+
+/*Noticias*/
+.seccion--noticias {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 5px solid #ff4655;
+    background-color: #201c35;
+}
+
+.ajusteImagen--noticias {
+    width: 24em;
+    height: auto;
+    border-bottom: 5px solid #ff4655;
+    margin: 0.3125rem 0rem 0rem 40px;
+}
+
+.tituloSeccion--noticas {
+    margin: 20px 40px 20px 40px;
+    font-size: 300%;
+    font-weight: 700;
+}
+
+.parrafoEstilo--noticias {
+    margin: 0.4375rem;
+    width: fit-content;
+    height: 10em;
+    background-color: #282343;
+    border: 1px solid #ff4655;
+    text-align: justify;
+    padding: 1.5625rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+    margin-right: 3.75rem;
+}
+
+
+/*Agentes*/
+.seccion--agentes {
+    width: 100%;
+    height: 85vh;
+    border-bottom: 5px solid #ff4655;
+    background-color: #201c35;
+}
+
+.encabezadoAgentes {
+    display: flex;
+    align-items: center;
+}
+
+.imgAdjust--logoAgente {
+    width: 4%;
+    height: auto;
+    margin: 3%;
+}
+
+.imgAdjust--fotoAgente {
+    height: 65%;
+    width: auto;
+    margin: 0px 150px 0px 150px;
+}
+
+.tituloSeccion--agentes {
+    font-size: 400%;
+    font-weight: 700;
+}
+
+.parrafoEstilo--agentes {
+    width: 55vw;
+    height: 70%;
+    background-color: #282343;
+    border: 4px solid #ff4655;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 3.125rem 5rem 5rem 5rem;
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.botonAgente {
+    border: 3px solid white;
+    border-radius: 9px 9px;
+    padding: 0.625rem 3.125rem 0.625rem 3.125rem;
+    background-color: #ff4655;
+    letter-spacing: 7px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.flexMain--agentes {
+    display: flex;
+    height: 100%;
+}
+
+.flexImagen--agente {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Index*/
+.encabezadoSeccionIndex {
+    display: flex;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 2em;
+}
+
+.imgAdjust--fotoIndexAgente {
+    display: inline;
+    width: 70%;
+    height: auto;
+
+}
+
+.tituloSeccion--index {
+    font-size: 3.7em;
+    font-weight: 700;
+    letter-spacing: 7px;
+}
+
+.indexAgentes {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 5px solid #ff4655;
+    background-color: #201c35;
+}
+
+.flexMain--indexAgentes {
+    display: flex;
+    height: 45%;
+    margin-top: 25px;
+}
+
+.parrafoEstilo--indexAgentes {
+    width: fit-content;
+    height: fit-content;
+    background-color: #282343;
+    border: 4px solid #ff4655;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+    padding: 2.5rem 3.125rem 4.375rem 3.125rem;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+.imgAdjust--logoIndexAgente {
+    width: 10em;
+    height: auto;
+    background-color: #282343;
+    border-bottom: 4px solid #ff4655;
+    padding: 1.25rem;
+}
+
+.imgAdjust--indexImgMapa {
+    height: auto;
+    width: 35em;
+    margin-top: 1.875rem;
+    margin-right: 0.625rem;
+    margin-left: 2.5rem;
+
+}
+
+.footerIndexAgentes {
+    height: 25%;
+    margin-top: 6.25rem;
+}
+
+.indexMapas {
+    width: 100%;
+    height: fit-content;
+    border-bottom: 5px solid #ff4655;
+    background-color: #201c35;
+}
+
+
+.galeriaMapas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+.cajaIndexMapa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5625em solid #282343;
+    background-size: contain;
+    width: 35em;
+    height: 20em;
+}
+
+.flexMain--indexMapas {
+    display: flex;
+    height: 45%;
+    margin-top: 25px;
+    flex-direction: row-reverse;
+}
+
+.footerIndexMapas {
+    height: 25%;
+    margin-top: 25px;
+}
+/*Fin index*/
+
+
+/*Grids y ajustes grids*/
+
+.mainGrid {  
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "parrafo imagen";
+    margin-bottom: 4em;
+}
+
+.parrafo { 
+    grid-area: parrafo; 
+}
+
+.imagen { 
+    grid-area: imagen; 
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.imgFondo--omen{
+    background-image: url(../assets/omen_agente.png);
+}
+
+.imgFondo--mapa{
+    background-image: url(../assets/img_mapa.png);
+
+}
+
+.rolesGrid {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "centinela controlador iniciador duelista";
+    place-items: center ;
+    margin-bottom: 3em;
+}
+
+
+
+.centinela { grid-area: centinela; }
+
+.controlador { grid-area: controlador; }
+
+.iniciador { grid-area: iniciador; }
+
+.duelista { grid-area: duelista; }
+
+.mainGrid--inverse {  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imagen parrafo";
+    margin-bottom: 4em;
+}
+
+.gridMapas {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "haven bind"
+    "ascent split";
+    place-items: center;
+    row-gap: 5em;
+    margin-bottom: 2em;
+}
+
+.haven { grid-area: haven; align-self: center; }
+
+.bind { grid-area: bind; align-self: center; }
+
+.ascent { grid-area: ascent; align-self: center;}
+
+.split { grid-area: split; align-self: center; }
+
+.estiloNombreMapa{
+    font-size: 3em;
+}
+
+.noticiasGrid{  
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "imgNoti1 noti1"
+    "ImgNoti2 noti2";
+    margin-bottom: 3em;
+}
+
+.imgNoti1 { grid-area: imgNoti1; }
+
+.ImgNoit2 { grid-area: ImgNoti2; }
+
+.noti1 { grid-area: noti1; }
+
+.noti2 { grid-area: noti2; }
+
+.gridLoginArriba{  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px   ;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "titulo titulo"
+    "logo1 logo2";
+    place-items: center;
+}
+
+.titulo { grid-area: titulo; }
+
+.logo1 { grid-area: logo1; }
+
+.logo2 { grid-area: logo2; }
+
+.color{
+    fill: white !important; 
+}
+.background{
+    background-color: #201c35;
+}
+
+.gridForm{  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    margin: 20px;
+    grid-template-areas:
+    "email"
+    "password"
+    "checkbox"
+    "submit";
+}
+
+.email { grid-area: email; }
+
+.password { grid-area: password; }
+
+.checkbox { grid-area: checkbox; }
+
+.submit { grid-area: submit;  }
+
+.textoRol{
+    font-size: 1.5em;
+}
+
+@media (min-width:310px) and (max-width: 481px){ 
+    /* smartphones, iPhone, portrait 480x320 phones */ 
+    .head {
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        border-bottom: 5px solid #ff4655;
+        position: sticky;
+        top: 0px;
+        font-size: 2em;
+    }
+
+    .foot {
+        height: fit-content;
+        display: flex;
+        background-color: #262b28;
+        font-size: 3em;
+    }
+
+    
+    .head__nav__list__element {
+        margin: 0.75rem;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .textoIntroducciones {
+        font-size: 5em;
+        font-weight: 700;
+        letter-spacing: 7px;
+        padding: 0.3125rem;
+    }
+    .noticiasGrid{  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+
+    body{
+        font-size: 4px;
+        width: fit-content;
+
+    }
+    
+    .ajusteImagen--noticias{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    .imgAdjust--indexImgMapa {
+        height: auto;
+        width: 0px;
+        margin: 0px;
+    }
+
+    .mainGrid--inverse {  
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "parrafo parrafo";
+        margin-bottom: 4em;
+    }
+
+    .imgFondo--omen{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    
+    .mainGrid {  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .rolesGrid {  
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .parrafoEstilo--noticias {
+        margin: 0.4375rem;
+        width: fit-content;
+        height: fit-content;
+        background-color: #282343;
+        border: 1px solid #ff4655;
+        text-align: justify;
+        padding: 1.5625rem;
+        font-size: 0.7rem;
+        font-weight: 100;
+        margin: 0px 3.75rem 1rem 3.75rem;
+    }
+
+    .parrafoEstilo--indexAgentes {
+        width: 80vw;
+        height: fit-content;
+        background-color: #282343;
+        border: 4px solid #ff4655;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        padding: 1.5rem 2.125rem 1.375rem 2.125rem;
+        font-size: 3em;
+        font-weight: 100;
+        margin: 0;
+    }
+
+    .gridMapas {  
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgAdjust--logoIndexAgente {
+        width: 20em;
+        height: auto;
+        background-color: #282343;
+        border-bottom: 4px solid #ff4655;
+        padding: 1.25rem;
+    }
+    .textoRol{
+        font-size: 3em;
+    }
+    .mainGrid--inverse {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        
+    }
+
+    .tituloSeccion--index {
+        font-size: 7em;
+        font-weight: 700;
+        letter-spacing: 7px;
+        margin: 1.25rem 1.25rem 1.25rem 0px;
+        text-align: center;
+    }
+
+    .nombreMapa {
+        width: fit-content;
+        height: fit-content;
+        margin: 0px;
+        font-size: 23em;
+        font-weight: 700;
+    }
+    
+    .textoMapa {
+        width: 60%;
+        height: fit-content;
+        margin: 0px;
+        font-size: 4em;
+        font-weight: lighter;
+    }
+}
+
+@media (min-width:481px) and (max-width: 641px){ 
+    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    body{
+        font-size: 6px;
+    }
+    .head {
+        height: 7em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        border-bottom: 5px solid #ff4655;
+        position: sticky;
+        top: 0px;
+        font-size: 2em;
+    }
+
+    .foot {
+        height: fit-content;
+        display: flex;
+        background-color: #262b28;
+        font-size: 2em;
+    }
+
+    
+    .head__nav__list__element {
+        margin: 0.75rem;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .textoIntroducciones {
+        font-size: 5em;
+        font-weight: 700;
+        letter-spacing: 7px;
+        padding: 0.3125rem;
+    }
+
+    .imgAdjust--logoIndexAgente {
+        width: 15em;
+        height: auto;
+        background-color: #282343;
+        border-bottom: 4px solid #ff4655;
+        padding: 1.25rem;
+    }
+
+    .rolesGrid {  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "centinela controlador"
+        " iniciador duelista";
+        place-items: center ;
+        margin-bottom: 3em;
+    }
+
+    .textoRol{
+        font-size: 2em;
+    }
+
+    .noticiasGrid{  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        place-content: center;
+        justify-content: center;
+    }
+    .ajusteImagen--noticias{
+        height: 0px;
+        width: 0px;
+    }
+    .imgAdjust--indexImgMapa {
+        height: auto;
+        width: 0px;
+        margin: 0px;
+    }
+
+    .mainGrid--inverse {  
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "parrafo parrafo";
+        margin-bottom: 4em;
+    }
+
+
+    .imgFondo--omen{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    
+    .mainGrid {  
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "parrafo parrafo";
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+
+    .parrafoEstilo--noticias {
+        margin: 0.4375rem;
+        width: fit-content;
+        height: fit-content;
+        background-color: #282343;
+        border: 1px solid #ff4655;
+        text-align: justify;
+        padding: 1.5625rem;
+        font-size: 1.2rem;
+        font-weight: 100;
+        margin-right: 3.75rem;
+    }
+
+    .mainGrid {  
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "parrafo parrafo";
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+    
+    .parrafoEstilo--indexAgentes {
+        width: fit-content;
+        height: fit-content;
+        background-color: #282343;
+        border: 4px solid #ff4655;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        padding: 2.5rem 3.125rem 4.375rem 3.125rem;
+        font-size: 3em;
+        font-weight: 100;
+    }
+
+    .nombreMapa {
+        width: fit-content;
+        height: fit-content;
+        margin: 0px;
+        font-size: 19em;
+        font-weight: 700;
+    }
+    
+    .textoMapa {
+        width: 55%;
+        height: fit-content;
+        margin: 0px;
+        font-size: 3em;
+        font-weight: lighter;
+    }
+}
+@media (min-width:641px) and (max-width: 961px){ 
+    /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    body{
+        font-size: 8px;
+    }
+
+    .head {
+        height: 7em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        border-bottom: 5px solid #ff4655;
+        position: sticky;
+        top: 0px;
+        font-size: 1.5em;
+    }
+
+    .foot {
+        height: fit-content;
+        display: flex;
+        background-color: #262b28;
+        font-size: 2em;
+    }
+
+    
+    .head__nav__list__element {
+        margin: 0.75rem;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .textoIntroducciones {
+        font-size: 5em;
+        font-weight: 700;
+        letter-spacing: 7px;
+        padding: 0.3125rem;
+    }
+    .noticiasGrid{  
+        display: grid;
+        grid-template-columns: 0fr 1fr ;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "imgNoti1 noti1"
+        "ImgNoti2 noti2";
+        margin-bottom: 3em;
+    }
+    .ajusteImagen--noticias{
+        height: 0px;
+        width: 0px;
+    }
+    .imgAdjust--indexImgMapa {
+        height: auto;
+        width: 0px;
+        margin: 0px;
+    }
+
+    .mainGrid--inverse {  
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "parrafo parrafo";
+        margin-bottom: 4em;
+    }
+
+    .parrafoEstilo--agentes{
+        font-size: 3em;
+    }
+    .imgFondo--omen{
+        height: 0px;
+        width: 0px;
+        margin: 0px;
+    }
+    
+    .mainGrid {  
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "parrafo parrafo";
+        justify-content: center;
+        margin-bottom: 4em;
+    }
+    .parrafoEstilo--indexAgentes {
+        width: fit-content;
+        height: fit-content;
+        background-color: #282343;
+        border: 4px solid #ff4655;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        padding: 2.5rem 3.125rem 4.375rem 3.125rem;
+        font-size: 3em;
+        font-weight: 100;
+    }
+
+    .parrafoEstilo--noticias{
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .nombreMapa {
+        width: fit-content;
+        height: fit-content;
+        margin: 0px;
+        font-size: 17em;
+        font-weight: 700;
+    }
+    
+    .textoMapa {
+        width: 55%;
+        height: fit-content;
+        margin: 0px;
+        font-size: 3em;
+        font-weight: lighter;
+    }
+    
+}
+@media (min-width:961px) and (max-width: 1025px)  { 
+    /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    body{
+        
+        font-size: 11px;
+    }
+    .head {
+        height: 7em;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: black;
+        border-bottom: 5px solid #ff4655;
+        position: sticky;
+        top: 0px;
+        font-size: 1.4em;
+    }
+
+    .foot {
+        height: fit-content;
+        display: flex;
+        background-color: #262b28;
+        font-size: 1.5em;
+    }
+
+    
+    .head__nav__list__element {
+        margin: 0.75rem;
+        text-decoration: none;
+        font-size: 1em;
+    }
+
+    .textoIntroducciones {
+        font-size: 4em;
+        font-weight: 700;
+        letter-spacing: 7px;
+        padding: 0.3125rem;
+    }
+
+    .nombreMapa {
+        width: fit-content;
+        height: fit-content;
+        margin: 0px;
+        font-size: 13em;
+        font-weight: 700;
+    }
+    
+    .textoMapa {
+        width: 55%;
+        height: fit-content;
+        margin: 0px;
+        font-size: 2.4em;
+        font-weight: lighter;
+    }
+}
+@media (min-width:1025px) and (max-width: 1281px) { 
+    /* big landscape tablets, laptops, and desktops */
+    body{
+        font-size: 14px;
+    }
+    .imgAdjust--indexImgMapa{
+        width: 25em;
+    }
+}
+
+@media (min-width:1281px) { 
+    /* hi-res laptops and desktops */ 
+    body{
+        font-size: 16px;
+    }
+}
+
