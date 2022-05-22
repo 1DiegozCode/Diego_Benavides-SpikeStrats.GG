@@ -632,6 +632,7 @@
     font-size: 1.5em;
 }
 
+/*media queries*/
 @media (min-width:310px) and (max-width: 481px){ 
     /* smartphones, iPhone, portrait 480x320 phones */ 
     .head {
@@ -1155,3 +1156,4 @@
     }
 }
 
+/*animaciones*/
