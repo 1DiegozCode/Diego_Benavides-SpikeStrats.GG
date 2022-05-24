@@ -19,118 +19,144 @@
 
     <body>
         <script src="js/bootstrap.min.js"></script>
-        <header id="top_page" class="head">
-            <h1><a href="index.html" class="head__logo">Spike <span><img src="/assets/spike.webp" alt="spike" class="spike"></span> Strats</a></h1>
-            <!--Logo-->
-            <nav class="head__nav">
-                <ul class="head__nav__list">
-                    <li><a href="pages/agentes.html" class="head__nav__list__element">AGENTES</a></li>
-                    <li><a href="pages/mapas.html" class="head__nav__list__element">MAPAS</a></li>
-                    <li><a href="pages/noticias.html" class="head__nav__list__element">NOTICIAS</a></li>
-                    <li><a href="pages/login.html" class="head__nav__list__element">LOGIN</a></li>
-                </ul>
-            </nav>
+        <header class="container-fluid">
+            <div class="row d-flex align-items-center head">
+                <div class="col-6 p-2">
+                    <h1><a href="index.html" class="text-decoration-none fw-bold">Spike <span><img src="/assets/spike.webp" alt="spike" class="spike"></span> Strats</a></h1>
+                </div>
+                <nav class="col-6 d-flex justify-content-around p-2">
+                    <a href="pages/agentes.html" class="text-decoration-none link__nav">AGENTES</a>
+                    <a href="pages/mapas.html" class="text-decoration-none link__nav">MAPAS</a>
+                    <a href="pages/noticias.html" class="text-decoration-none link__nav">NOTICIAS</a>
+                    <a href="pages/login.html" class="text-decoration-none link__nav">LOGIN</a>
+                </nav>
+            </div>
         </header>
-        <!--introducción de la pagina-->
-        <section class="seccionIntroduccion flex-center">
-            <div class="imgFondo--haven imgFondo flex-center imagenOscurecida">
-                <h2 class="textoIntroducciones">La mejor herramienta para mejorar en valorant SpikeStrats.gg</h2>
+
+        <section class="container-fluid">
+            <div class="row d-flex align-items-center justify-content-center seccionIntroduccion bgi imagenOscurecida">
+                <div class="col-10">
+                    <h2 class="fs-1 fw-bolder text-center">La mejor herramienta para mejorar en valorant <br> SpikeStrats.gg</h2>
+                </div>
             </div>
         </section>
-        <main>
-            <!--presentación pagina agentes-->
-            <article id="agentes_index" class="indexAgentes">
-                <header class="encabezadoSeccionIndex">
-                    <h2 class="tituloSeccion--index margenTitulo--left">Conoce a tus agentes</h2>
-                </header>
-                <div class="mainGrid">
-                    <div class="parrafo">
-                        <p class="parrafoEstilo--indexAgentes margenParrafo--left">Es un hecho, la utilidad de cada gente y como la usa es quien
-                        decide quien gana la ronda. Conoce más acerca de tus agentes y el rol
-                        que cumple dentro de la partida. <br><br><br><a href="pages/agentes.html"class="botonAgente">AGENTES</a></span></p>
-                    </div>
-                    <div class="imagen imgFondo--omen">
-                    </div>
+
+        <article class="container-fluid indexAgentes">
+            <div class="row d-flex align-items-center">
+                <div class="col-12  p-1">
+                    <h2 class="m-2 tituloSeccion--index">Conoce a tus agentes</h2>
                 </div>
-                <div class="rolesGrid">
-                    <div class="centinela flexElemento ">
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-7 border-5 p-3">
+                    <p class="text-center fs-3 m-3 p-5 border-p">Es un hecho, la utilidad de cada gente y como la usa es quien
+                    decide quien gana la ronda. Conoce más acerca de tus agentes y el rol
+                    que cumple dentro de la partida. <br><br><br>
+                    <a href="pages/agentes.html"class="botonAgente">AGENTES</a></p>
+                </div>
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                    <img src="assets/omen_agente.png" class="omenImg" alt="omen">
+                </div>
+                <div class="row d-flex align-items-center justify-content-around mt-2 mb-2 ">
+                    <div class="col-3 text-center">
                         <img src="assets/centinela_rol.webp" alt="Logo del rol centinela" class="imgAdjust--logoIndexAgente" >
-                        <!--La imagen es blanca-->
                         <h3 class="textoRol">CENTINELA</h3>
                     </div>
-                    <div class="controlador flexElemento">
+                    <div class="col-3 text-center">
                         <img src="assets/controlador_rol.webp" alt="Logo del rol controlador" class="imgAdjust--logoIndexAgente">
-                        <!--La imagen es blanca-->
                         <h3 class="textoRol">CONTROLADOR</h3>
                     </div>
-                    <div class="iniciador flexElemento">
+                    <div class="col-3 text-center">
                         <img src="assets/iniciador_rol.webp" alt="Logo del rol iniciador" class="imgAdjust--logoIndexAgente">
-                        <!--La imagen es blanca-->
                         <h3 class="textoRol">INICIADOR</h3>
                     </div>
-                    <div class="duelista flexElemento">
+                    <div class="col-3 text-center">
                         <img src="assets/duelista_rol.webp" alt="Logo del rol duelista" class="imgAdjust--logoIndexAgente">
-                        <!--La imagen es blanca-->
                         <h3 class="textoRol">DUELISTA</h3>
                     </div>
                 </div>
-            </article>
-            </article>
-            <!--presentación pagina mapas-->
-            <article id="mapas_index" class="indexMapas">
-                <header class="encabezadoSeccionIndex right">
-                    <h2 class="tituloSeccion--index margenTitulo--right">Domina el terreno de juego</h2>
-                </header>
-                <main class="mainGrid--inverse">
-                    <p class="parrafoEstilo--indexAgentes margenParrafo--left  parrafo">Dominar tu zona de juego, va a hacer que cada rincon donde
+            </div>
+        </article>
+
+        <article class="container-fluid indexAgentes">
+            <div class="row d-flex align-items-center">
+                <div class="col-12  p-1">
+                    <h2 class="m-2 tituloSeccion--index">Domina el terreno de juego</h2>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-7 border-5 p-3">
+                    <p class="text-center fs-3 m-3 p-5 border-p">Dominar tu zona de juego, va a hacer que cada rincon donde
                         el enemigo te quiera esperar, tu ya lo vas a conocer. Atrevete
-                        a pensar mejores estrategias con esto en mente.<br><br><br><a href="pages/mapas.html" class="botonAgente" >MAPAS</a></p>
-                    <div class="imagen imgAdjust--indexImgMapa imgFondo--haven ">
-                    </div>
-                </main>
-                <footer class="gridMapas">
-                    <div class="haven cajaIndexMapa imgFondo--haven imagenOscurecida">
-                        <h3 class="estiloNombreMapa">HAVEN</h3>
-                    </div>
-                    <div class="bind cajaIndexMapa imgFondo--bind imagenOscurecida ">
-                        <h3 class="estiloNombreMapa">BIND</h3>
-                    </div>
-                    <div class="ascent cajaIndexMapa imgFondo--ascent imagenOscurecida">
-                        <h3 class="estiloNombreMapa">ASCENT</h3>
-                    </div>
-                    <div class="split cajaIndexMapa imgFondo--split imagenOscurecida">
-                        <h3 class="estiloNombreMapa">SPLIT</h3>
-                    </div>
-                </footer>
-            </article>
-            <!--presentación pagina noticas-->
-            <article id="noticias_index" class="seccion--noticias">
-                <header class="centerTitle">
-                    <h2 class="tituloSeccion--index">Ultimas Noticias</h2>
-                </header>
-                <section">
-                    <div class="noticiasGrid">
-                        <div class="imgNoti1">
-                            <img src="assets/valorant_champions.jpg" alt="Imagen referente a valorat champions" class="ajusteImagen--noticias">
+                        a pensar mejores estrategias con esto en mente.<br><br><br>
+                    <a href="pages/mapas.html"class="botonAgente">MAPAS</a></p>
+                </div>
+                <div class="col-5 d-flex align-items-center justify-content-center">
+                    <img src="assets/haven_logo.jpg" class="havenImg" alt="omen">
+                </div>
+                <div class="row d-flex align-items-center justify-content-around mt-2 mb-2 ">
+                    <div class="col-5 text-center">
+                        <div class="haven cajaIndexMapa imgFondo--haven imagenOscurecida">
+                            <h3 class="estiloNombreMapa">HAVEN</h3>
                         </div>
-                        <div class="noti1">
-                            <p class="parrafoEstilo--noticias">La valorant champions 2022 se acerca, los equipos se están afilando
-                            sus cuchillos y estrategias.Liquid, G2, Vodafone Giants, y más, competiran
-                            en la copa de valorant más gran del mundo para mostrar quien es el verdadero
-                            campeón.<br><br> más... </p>
-                        </div>    
-                        <div class="imgNoti2">       
-                            <img src="assets/parche4.07.webp" alt="Imagen referente a valorat champions" class="ajusteImagen--noticias">
-                        </div> 
-                        <div class="noti2"> 
-                            <p class="parrafoEstilo--noticias">El parche 4.07, ha traido consigo cambios a difrentes agentes, armas y mapas.Lo más 
-                            notable del parche es el nuevo servidor, Bogotá.<br><br> más...</p>
-                        <div> 
-                    </div>  
-                </section>
-            </article>
-            <footer class="foot">
-                <!--Logo, redes y derechos-->
+                    </div>
+                    <div class="col-5 text-center">
+                        <div class="bind cajaIndexMapa imgFondo--bind imagenOscurecida ">
+                            <h3 class="estiloNombreMapa">BIND</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-around mt-2 mb-2 ">
+                    <div class="col-5 text-center">
+                        <div class="ascent cajaIndexMapa imgFondo--ascent imagenOscurecida">
+                            <h3 class="estiloNombreMapa">ASCENT</h3>
+                        </div>
+                    </div>
+                    <div class="col-5 text-center">
+                        <div class="split cajaIndexMapa imgFondo--split imagenOscurecida">
+                            <h3 class="estiloNombreMapa">SPLIT</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="container-fluid indexAgentes">
+            <div class="row d-flex align-items-center ">
+                <div class="col-12  p-1">
+                    <h2 class="m-4 tituloSeccion--index text-center">Últimas noticias</h2>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-around">
+                
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class="imgNoti1">
+                        <img src="assets/valorant_champions.jpg" alt="Imagen referente a valorat champions" class="ajusteImagen--noticias">
+                    </div>
+                </div>
+                <div class="col-8 d-flex justify-content-center">
+                    <p class="parrafoEstilo--noticias">La valorant champions 2022 se acerca, los equipos se están afilando
+                        sus cuchillos y estrategias.Liquid, G2, Vodafone Giants, y más, competiran
+                        en la copa de valorant más gran del mundo para mostrar quien es el verdadero
+                        campeón.<br><br> más... </p>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center justify-content-around mb-5">
+                
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class="imgNoti2">       
+                        <img src="assets/parche4.07.webp" alt="Imagen referente a valorat champions" class="ajusteImagen--noticias">
+                    </div> 
+                    
+                </div>
+                <div class="col-8 d-flex justify-content-center">
+                    <p class="parrafoEstilo--noticias">El parche 4.07, ha traido consigo cambios a difrentes agentes, armas y mapas.Lo más notable del parche es el nuevo servidor, Bogotá.<br><br> más...</p>
+                </div>
+            </div>
+        </article>
+
+                    <footer class="foot">
+
                 <article class="foot__indexRedes">
                     <header class="foot__indexRedes__head">
                         <h1><a href="../index.html" class="foot__indexRedes__head__logo">SpikeStrats</a></h1>
@@ -173,5 +199,4 @@
                 </aside>
             </footer>
     </body>
-
 </html>

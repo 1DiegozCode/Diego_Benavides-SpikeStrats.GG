@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,19 +10,22 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
     </head>
-
     <body>
-        <header class="head">
-            <h1><a href="../index.html" class="head__logo">Spike <span><img src="../assets/spike.webp" alt="spike" class="spike"></span> Strats</a></h1>
-            <nav class="head__nav">
-                <ul class="head__nav__list">
-                    <li><a href="agentes.html" class="head__nav__list__element">AGENTES</a></li>
-                    <li><a href="mapas.html"class="head__nav__list__element">MAPAS</a></li>
-                    <li><a href="noticias.html"class="head__nav__list__element">NOTICIAS</a></li>
-                    <li><a href="login.html"class="head__nav__list__element">LOGIN</a></li>
-                </ul>
-            </nav>
+        <script src="../js/bootstrap.min.js"></script>
+        <header class="container-fluid">
+            <div class="row d-flex align-items-center head">
+                <div class="col-6 p-2">
+                    <h1><a href="../index.html" class="text-decoration-none">Spike <span><img src="/assets/spike.webp" alt="spike" class="spike"></span> Strats</a></h1>
+                </div>
+                <nav class="col-6 d-flex justify-content-around p-2">
+                    <a href="agentes.html" class="text-decoration-none link__nav">AGENTES</a>
+                    <a href="mapas.html" class="text-decoration-none link__nav">MAPAS</a>
+                    <a href="noticias.html" class="text-decoration-none link__nav">NOTICIAS</a>
+                    <a href="login.html" class="text-decoration-none link__nav">LOGIN</a>
+                </nav>
+            </div>
         </header>
         <!--Introducción página mapas-->
         <section class="seccionIntroduccion flex-center">
@@ -36,51 +38,58 @@
         </section>
         <!--Contenido principal, mapas del juego-->
         <main>
-            <article id="haven_pagina_mapas" class="seccion--mapas flex-center">
-                <div class="imgFondo--haven imgFondo flex-center--mapas imagenOscurecida">
-                    <header>
-                        <h2 class="nombreMapa">HAVEN</h2>
-                    </header>
-                    <main class="textoMapa">
-                        <p>Bajo un monasterio olvidado, emerge un clamor entre los
-                        agentes rivales que se enfrentan para controlar tres
-                        sitios. Hay más territorio por controlar, pero los
-                        defensores pueden usar el terreno adicional para realizar
-                        ataques agresivos.<br><br>Con SpikeStrats dominaras Haven</p>
-                    </main>
-                </div>
-            </article>
-            <article id="bind_pagina_mapas" class="seccion--mapas flex-center">
-                <div class="imgFondo--bind imgFondo flex-center--mapas imagenOscurecida">
-                    <header>
-                        <h2 class="nombreMapa">BIND</h2>
-                    </header>
-                    <main class="textoMapa">
-                        <p>Dos sitios. No existe un centro. Debes elegir derecha o
-                        izquierda. ¿Cuál será tu elección? Ambos ofrecen caminos
-                        directos para los atacantes y un par de
-                        teletransportadores unidireccionales facilitan el flanqueo.
-                        <br><br>Con SpikeStrats dominaras Bind</p>
-                    </main>
-                </div>
-            </article>
-            <article id="ascent_pagina_mapas" class="seccion--mapas flex-center">
-                <div class="imgFondo--ascent imgFondo flex-center--mapas imagenOscurecida">
-                    <header>
-                        <h2 class="nombreMapa">ASCENT</h2>
-                    </header>
-                    <main class="textoMapa">
-                        <p>Un campo abierto para pequeñas batallas de
-                            posicionamiento y desgaste dividen Ascenso en dos
-                            sitios. Puedes fortificar cada uno con puertas de bombas
-                            irreversibles; una vez puestas, tendrás que destruirlas o
-                            encontrar otra forma de pasar. Cede el menor territorio
-                            posible.<br><br>Con SpikeStrats dominaras Ascent</p>
-                    </main>
-                </div>
-            </article>
-            <article id="split_pagina_mapas" class="seccion--mapas flex-center">
-                <div class="imgFondo--split imgFondo flex-center--mapas imagenOscurecida">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="imgFondo--haven imgFondo flex-center--mapas imagenOscurecida seccion--mapas">
+                            <header>
+                                <h2 class="nombreMapa">HAVEN</h2>
+                            </header>
+                            <main class="textoMapa">
+                                <p>Bajo un monasterio olvidado, emerge un clamor entre los
+                                agentes rivales que se enfrentan para controlar tres
+                                sitios. Hay más territorio por controlar, pero los
+                                defensores pueden usar el terreno adicional para realizar
+                                ataques agresivos.<br><br>Con SpikeStrats dominaras Haven</p>
+                            </main>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgFondo--bind imgFondo flex-center--mapas imagenOscurecida seccion--mapas">
+                            <header>
+                                <h2 class="nombreMapa">BIND</h2>
+                            </header>
+                            <main class="textoMapa">
+                                <p>Dos sitios. No existe un centro. Debes elegir derecha o
+                                izquierda. ¿Cuál será tu elección? Ambos ofrecen caminos
+                                directos para los atacantes y un par de
+                                teletransportadores unidireccionales facilitan el flanqueo.
+                                <br><br>Con SpikeStrats dominaras Bind</p>
+                            </main>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgFondo--ascent imgFondo flex-center--mapas imagenOscurecida seccion--mapas">
+                            <header>
+                                <h2 class="nombreMapa">ASCENT</h2>
+                            </header>
+                            <main class="textoMapa">
+                                <p>Un campo abierto para pequeñas batallas de
+                                    posicionamiento y desgaste dividen Ascenso en dos
+                                    sitios. Puedes fortificar cada uno con puertas de bombas
+                                    irreversibles; una vez puestas, tendrás que destruirlas o
+                                    encontrar otra forma de pasar. Cede el menor territorio
+                                    posible.<br><br>Con SpikeStrats dominaras Ascent</p>
+                            </main>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="imgFondo--split imgFondo flex-center--mapas imagenOscurecida seccion--mapas">
                     <header>
                         <h2 class="nombreMapa">SPLIT</h2>
                     </header>
@@ -93,7 +102,17 @@
                             dominaras Ascent</p>
                     </main>
                 </div>
-            </article>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </main>
         <footer class="foot">
             <!--Logo, redes y derechos-->
@@ -138,6 +157,7 @@
                 </ul>
             </aside>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
-
 </html>
